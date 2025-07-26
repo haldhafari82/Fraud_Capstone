@@ -4,7 +4,7 @@ Analyze and identify fraudent transactions
 # Analysis
 Analyzed multiple datasets and acquired dataset from Kaggle https://www.kaggle.com/datasets/chitwanmanchanda/fraudulent-transactions-data. The goal is to identify fraudulent transactions costing banks billions of dollars annually. Furthermore, impacted parties suffering financial loss at an institution often lose faith in institutions failing to proactively add safeguards to protect their assets.
 
-Several classification models were tested with the same data, test and validation sets. The accuracy was very high and the precision varied depending on the model. Logistic regression was the best, followed by decision tree and finally KNN. Accuracy alone was consistently high but was insufficient as the lone metric since fraudulent transactions are naturally very scarce.
+Several classification models were tested with the same data, test and validation sets. The accuracy was very high and the precision varied depending on the model. Logistic regression was the best, followed by decision tree and finally KNN. Accuracy alone was consistently high but was insufficient as the lone metric since fraudulent transactions are naturally very scarce. After running all three models, Gridsearch was utilized with the decision tree model, which was running faster than the other two models. The best params produced precision higher than 95%!
 
 # Features
 ### Problem 3: Understanding the Features
@@ -51,9 +51,16 @@ Precision: 0.86
 Accuracy: 1.00
 
 KNN:
+Precision: 0.83
+Accuracy: 1.00
 
-Regression:
+Logistic Regression:
+Precision: 0.92
+Accuracy: 1.00
 
+Decision Tree GridSearch:
+Best parameters: {'criterion': 'entropy', 'max_depth': 7, 'min_samples_leaf': 4, 'min_samples_split': 2}
+Best cross-validation score: 0.9531
 
 Results:
-Logistic regression classification outscored both decision tree and KNN classifications. There was room to improve all three models by transforming additional features or by experimenting with various tree depths, etc. When it comes to performance, decision tree completed fastest while KNN and LR were significantly slower in processing the data which indicate higher compute and associated costs. Gridsearch was attempted with the decision tree to find the optimal params, however was running for a very long time using PC resources.
+Logistic regression classification outscored both decision tree and KNN classifications. There was room to improve all three models by transforming additional features or by experimenting with various tree depths, etc. When it comes to performance, decision tree completed fastest while KNN and LR were significantly slower in processing the data which indicate higher compute and associated costs. Gridsearch was attempted with the decision tree to find the optimal params and the results were as follows:
