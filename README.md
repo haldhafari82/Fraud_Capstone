@@ -41,3 +41,17 @@ A baseline model shows a high accuracy. This is due to the fact that fraudulent 
 
 # Research
 Several models (tree, nearest neighbor, regression) will be required for training to predict fraudulent transactions at a later stage.
+
+Three different models were used against the same training/test data and accuracy/precision were assessed. The results of each are shown below:
+
+Decision Tree:
+Precision: 0.86
+Accuracy: 1.00
+
+KNN:
+
+Regression:
+
+
+Results:
+Logistic regression classification outscored both decision tree and KNN classifications. There was room to improve all three models by transforming additional features or by experimenting with various tree depths, etc. When it comes to performance, decision tree completed fastest while KNN and LR were significantly slower in processing the data which indicate higher compute and associated costs.
