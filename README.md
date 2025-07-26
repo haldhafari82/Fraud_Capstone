@@ -4,6 +4,8 @@ Analyze and identify fraudent transactions
 # Analysis
 Analyzed multiple datasets and acquired dataset from Kaggle https://www.kaggle.com/datasets/chitwanmanchanda/fraudulent-transactions-data. The goal is to identify fraudulent transactions costing banks billions of dollars annually. Furthermore, impacted parties suffering financial loss at an institution often lose faith in institutions failing to proactively add safeguards to protect their assets.
 
+Several classification models were tested with the same data, test and validation sets. The accuracy was very high and the precision varied depending on the model. Logistic regression was the best, followed by decision tree and finally KNN.
+
 # Features
 ### Problem 3: Understanding the Features
 
