@@ -56,4 +56,4 @@ Regression:
 
 
 Results:
-Logistic regression classification outscored both decision tree and KNN classifications. There was room to improve all three models by transforming additional features or by experimenting with various tree depths, etc. When it comes to performance, decision tree completed fastest while KNN and LR were significantly slower in processing the data which indicate higher compute and associated costs.
+Logistic regression classification outscored both decision tree and KNN classifications. There was room to improve all three models by transforming additional features or by experimenting with various tree depths, etc. When it comes to performance, decision tree completed fastest while KNN and LR were significantly slower in processing the data which indicate higher compute and associated costs. Gridsearch was attempted with the decision tree to find the optimal params, however was running for a very long time using PC resources.
